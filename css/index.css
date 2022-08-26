@@ -478,12 +478,12 @@ footer hr {
   }
 
   #slider ul li img{
-    width: 375px;
+    width: 300px;
     height: 100%;
   }
 
   #slider ul li div{
-    width: 375px;
+    width: 300px;
     height: 265px;
   }
   #slider #prev, #slider #next {
@@ -540,4 +540,24 @@ border: #011145 solid 2px;
 padding: 1.1rem 3.5rem;
 color: #011145;
 border-radius: 05px;
+}
+
+
+
+
+
+
+
+.hero-section{
+    height: 100%;
+}
+
+.hero-content{
+    padding-top: 07rem !important;
+    padding-bottom: 10rem!important;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    color: #011145;
 }
