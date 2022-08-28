@@ -9,4 +9,3 @@ $(document).ready(function () {
     $(this).parents(".control-group").remove();
   });
 });
-
