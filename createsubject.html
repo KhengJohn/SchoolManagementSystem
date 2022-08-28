@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  rel="stylesheet"
+/>
+
+   <!-- Custom styles for this template -->
+   <link href="css/minerva.min.css" rel="stylesheet" />
+   <link href="css/minerva_style.css" rel="stylesheet" />
+   <link href="css/all.css" rel="stylesheet" />
+   <script src="js/stateLgc.js"></script>
+   <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="public_html\css\main.css.css">
+    <!-- ALAPA CUSTOM STYLE -->
+<link rel="stylesheet" href="./css/customstyle.css">
+<!-- ALAPA CUSTOM STYLE END-->
+  <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <style>
+      
+    </style>
+  </head>
+  <body >
+    <div class="container-fluid headnav mb-4 shadow-sm">
+        <div onclick="openNav()" class="hamburger">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+       </div> 
+       <div class="dropdown">
+          <a href="#" class="btn btn-mblue dropdown-toogle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./img/homepage/java-script.png" class="rounded-circle"  width="50px" alt="">
+         </a> 
+         <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item"> Log Out</a></li>
+    
+         </ul>
+      </div>
+    </div>
+    <!-- SIDNAV -->
+
+<!-- <nav>
+  <div id="mySidenav" class="sidenav">
+    <div class="sidenav-head">
+      <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+       <a href="javascript:void(0)" class="closenav" onclick="closeNav()">&times;</a> 
+     <div onclick="closeNav()" class="close-hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </div>
+    
+    <div class="nav-links">
+     <ul>
+     <a class=""  href="#">Home</a>
+     <a class=""  href="#">Set Session</a>
+     <a class=""  href="#">Create Class</a>
+     <a class="current"  href="#">Add Subject</a>
+     <a class="" href="#">Create Staff</a>
+     <a class="" href="#">Registered Students</a>
+     <a class="" href="#">School Cabal</a>
+     
+     <a class="" href="#">Class Cabal</a> <a class="" href="#">School Fees</a><a class="" href="#">Attendance</a>
+     <a class="" href="#">Finances</a>
+    <a class="" href="#">Modify Password</a>
+    </ul>
+   </div>
+   </div>
+ </nav> -->
+
+ <nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="sidenav-head">
+        <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+       <div onclick="closeNav()" class="close-hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+      </div>
+      
+      <div class="nav-links">
+       <ul>
+       <a class=""  href="#">Dashboard</a>
+       
+       
+       <h4>View</h4>
+       <a class="" href="#">Attendance</a>
+       <a class="" href="#">Class Cabal</a> 
+       <a class="" href="#">Finances</a>
+       <a class="" href="#">School Cabal</a>
+       <a class="" href="#">School Fees</a>
+       <hr />
+  
+        <h4>Create</h4> 
+       <a class=""  href="#">Create Class</a>
+       <a class="current"  href="#">Create Subject</a>
+       <a class="" href="#">Create Staff</a>
+       <a class="" href="#">Registered Students</a>
+       <a class=""  href="#">Set Session</a>
+       <hr />
+       <h4>Settings</h4>
+      <a class="" href="#">Modify Password</a>
+      <a class="" href="#">Sign Out</a>
+     
+      </ul>
+     </div>
+     </div>
+   </nav>
+   <!-- <span class="OCB text-primary" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+   <!-- SIDNAV END --> 
+
+    <div class="container">
+       <form class="">
+        <div class="formbody shadow-lg  mt-5">
+          <div class="container mb-2"> 
+          <h1 class="h4 text-gray-900 text-mblue pt-5 text-center"> Create Subject</h1>
+          </div>
+         
+         <div class="container">
+          <span class="text-mblue"  style="font-weight: bolder;">
+            Enter Subject:
+        </span>
+            <div class="input-group control-group after-add-more">
+              <input
+                type="text"
+                name="addmore[]"
+                class="form-control"
+                placeholder="Enter Subject"
+              />
+            </div>
+        
+          <div class="copy hide">
+            <div class="control-group input-group" style="margin-top: 10px">
+              <input
+                type="text"
+                name="addmore[]"
+                class="form-control"
+                placeholder="Enter Subject"
+              />
+              <div class="input-group-btn">
+                <button class="btn btn-danger remove" type="button">
+                 Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="input-group-btn">
+                <button class="btn btn-mblue  add-more mt-3 ms-4" type="button">
+                   Add More
+                </button>
+              </div>     
+          <div class="btnsubbtn">
+            <input type="submit" class="btn btn-mblue me-4">
+          </div> 
+             <br>
+          </div>
+        
+    </form> 
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/Subjects.js"></script>
+  </body>
+</html>
