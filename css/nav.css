@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 29, 2021, 4:52:17 PM
+    Author     : Kelechi
+*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0BDA51;
+    color: #fff;
+}
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li {
+    list-style: none;
+    transition: all 0.5s ease;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover {
+    background-color: #32CD32;
+}
+.navbar-links.block {
+    display: block;
+}
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s transform;
+}
+.toggle-button .bar:nth-child(1).active {
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+.toggle-button .bar:nth-child(2).active {
+    display: none;
+}
+.toggle-button .bar:nth-child(3).active {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 1rem 1rem;
+    }
+    .navbar-links .active {
+        display: flex;
+    }
+    .dropdown-content {
+        position: relative !important;         
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0BDA51;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;    
+}
+
+.dropdown-content ul a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #32CD32;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 1.0s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #8b8484;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+  @media screen and (max-width: 420px) {
+
+    .row {
+      width: 83%;
+      display: inline-block;
+    }
+
+  }

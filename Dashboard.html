@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./css/nav.css" />
+
+
+<!-- Custom styles for this template -->
+<link href="css/minerva.min.css" rel="stylesheet" />
+<link href="css/minerva_style.css" rel="stylesheet" />
+<link href="css/all.css" rel="stylesheet" />
+<script src="js/stateLgc.js"></script>
+<link rel="stylesheet" href="./css/nav.css" />
+
+<!-- ALAPA CUSTOM STYLE -->
+<link rel="stylesheet" href="./css/customstyle.css">
+<!-- ALAPA CUSTOM STYLE END-->
+
+<style>
+
+</style>
+
+</head>
+<body>
+  <div class="container-fluid headnav mb-4 shadow-sm">
+    <div onclick="openNav()" class="hamburger">
+     <div class="line"></div>
+     <div class="line"></div>
+     <div class="line"></div>
+   </div> 
+   <div class="dropdown">
+      <a href="#" class="btn btn-mblue dropdown-toogle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./img/homepage/java-script.png" class="rounded-circle"  width="50px" alt="">
+     </a> 
+     <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item"> Log Out</a></li>
+
+     </ul>
+  </div>
+</div>
+     <!-- SIDNAV -->
+
+<nav>
+  <div id="mySidenav" class="sidenav">
+    <div class="sidenav-head">
+      <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+      <!-- <a href="javascript:void(0)" class="closenav" onclick="closeNav()">&times;</a> -->
+     <div onclick="closeNav()" class="close-hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </div>
+    
+    <div class="nav-links">
+     <ul>
+     <a class="current"  href="#">Dashboard</a>
+     
+     
+     <h4>View</h4>
+     <a class="" href="#">Attendance</a>
+     <a class="" href="#">Class Cabal</a> 
+     <a class="" href="#">Finances</a>
+     <a class="" href="#">School Cabal</a>
+     <a class="" href="#">School Fees</a>
+     <hr />
+
+      <h4>Create</h4> 
+     <a class=""  href="#">Create Class</a>
+     <a class=""  href="#">Add Subject</a>
+     <a class="" href="#">Create Staff</a>
+     <a class="" href="#">Registered Students</a>
+     <a class=""  href="#">Set Session</a>
+     <hr />
+     <h4>Settings</h4>
+    <a class="" href="#">Modify Password</a>
+    <a class="" href="#">Sign Out</a>
+   
+    </ul>
+   </div>
+   </div>
+ </nav>
+
+   <!-- <span class="OCB text-primary" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+   <!-- SIDNAV END --> 
+
+
+  <div id="navDiv"></div>
+  <section class="container number-cards text-mblue">
+    <div class="number-card-grid">
+      <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+          <p class="card-title pl-0  mb-0 pb-0">Number of Branches</p>
+          <div class="card-body mt-0 pt-0 ">
+            <h2>440</h2>
+          </div>
+      </div>
+      <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+        <p class="card-title pl-0  mb-0 pb-0">Number of Teachers</p>
+        <div class="card-body mt-0 pt-0 ">
+          <h2>440</h2>
+        </div>
+    </div>
+    <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+      <p class="card-title pl-0  mb-0 pb-0">Number of Students</p>
+      <div class="card-body mt-0 pt-0 ">
+        <h2>440</h2>
+      </div>
+  </div>
+  <div class="card shadow rounded pl-4 pt-4 pr-4 bg-mblue text-white  number-card nc-last">
+          <p class="card-title pl-0  mb-0 pb-0">School Year</p>
+          <div class="card-body mt-0 pt-0 ">
+            <h2>2022</h2>
+          </div>
+      </div>
+      <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+        <div class="card-body mt-0 pt-0 ">
+          <h4>View Class</h4>
+        </div>
+    </div>
+    <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+      <div class="card-body mt-0 pt-0 ">
+        <h4>View Subject</h4>
+      </div>
+  </div>
+  <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
+    <div class="card-body mt-0 pt-0 ">
+      <h4> Finance</h4>
+    </div>
+</div>
+<div class="card shadow rounded pl-4 pt-4 pr-4 bg-mblue text-white  number-card nc-last">
+        <div class="card-body mt-0 pt-0 ">
+          <h4>Session: 2<sup>nd</sup></h4>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!--        <a href="category.html">category</a><br>
+        <a href="Product.html">Product</a><br>
+        <a href="Shipper.html">Shipper</a><br>
+        <a href="Supplier.html">Supplier</a><br>-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <!-- <script src="js/SessionAndLogout.js"></script> -->
+
+</body>
+
+</html>
