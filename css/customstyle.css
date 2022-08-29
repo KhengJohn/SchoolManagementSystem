@@ -188,6 +188,10 @@ color: white;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.2rem;
 }
+.number-card-grid a{
+    text-decoration: none;
+    color: #011145;
+}
 
 @media(max-width:920px){
     .number-card-grid{
