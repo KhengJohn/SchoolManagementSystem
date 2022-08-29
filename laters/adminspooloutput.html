@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="./css/nav.css" />
+  </head>
+
+  <!-- Custom styles for this template -->
+  <link href="css/minerva.min.css" rel="stylesheet" />
+  <link href="css/minerva_style.css" rel="stylesheet" />
+  <link href="css/all.css" rel="stylesheet" />
+  <script src="js/stateLgc.js"></script>
+  <link rel="stylesheet" href="./css/nav.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!-- ALAPA CUSTOM STYLE -->
+   <link rel="stylesheet" href="./css/customstyle.css">
+   <!-- ALAPA CUSTOM STYLE END-->
+  <style>  
+
+</style>    
+
+
+  <body>
+    <div id="navDiv"></div>
+    <input
+      type="hidden"
+      class="form-control form-control-user"
+      name="userId"
+      id="userId"
+    />
+    <input
+      type="hidden"
+      class="form-control form-control-user"
+      name="schoolShortName"
+      id="schoolShortName"
+    />
+    
+
+    
+    <div class="container">
+    
+    <form>
+      <div class="formbody me-3 shadow-lg">
+        <a href="adminspool.html"  class="close m-5 text-dark"  style="font-size: 30px;">
+            &times;
+       </a> 
+          <h1 class="h4 text-gray-900  pt-5 text-center">ADMIN</h1>
+        
+        <div class="m-5 " style="overflow-x:auto;">
+<table class="table ">
+    <thead>
+        <tr>
+            <th scope="col">STAFF ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">ROLE</th>
+            <th scope="col">DEPARTMENT</th>
+            <th scope="col">  </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>SDN001</td>
+        <td>Veronica Godwin</td>
+        <td>Principal</td>
+        <td>Aministration</td>
+        <td> <button class="btn btn-mblue" type="button"  data-toggle="modal"
+            data-target="#myModal">Modify</button></td></tr>
+        <tr>
+            <td>SDN002</td>
+            <td>Innocent Kelvin</td>
+            <td>Vice Principal</td>
+            <td>Aministration</td>
+            <td>
+                <button class="btn btn-mblue" type="button"  data-toggle="modal"
+                data-target="#myModal">Modify</button>
+
+                 <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="">
+              <button type="button" class="close  mt-5 me-5" data-dismiss="modal">
+                &times;
+              </button>
+              
+            </div><h4 class="modal-title text-center ">Modify</h4>
+            <div class="modal-body">
+
+                <div class="row  m-3 text-start"> <div class="col">
+                 
+                    <div class="col btn-group">
+                        
+                    <select name="" id="" class="form-select form-select-lg border border-dark " aria-label=".form-select-lg example" style="height: 40px;">
+                        
+                        <option  selected> Select Privilege</option>
+                        <option value="1">Super User </option>
+                        <option value="2">Admin</option>
+                        <option value="3">User</option>
+                    </select>
+                </div>
+            
+              
+        <hr class="text-dark">       
+                   
+
+                    <div class="row mt-4 ">
+                        <div class="col col-4">
+                        <input
+                        type="submit"
+                        name="submit"
+                        class="form-control btn-default"
+                        Value="Submit"
+                      /></div>
+                  
+                      <div class="col col-4">
+                        <input
+                        type="button"
+                        name="cancel"
+                        class="form-control btn-default"
+                        Value="Cancel" 
+                        data-dismiss="modal"
+                      /></div>
+        
+                      <div class="col col-4">
+                        <input
+                        type="button"
+                        name="DeleteUser"
+                        class="form-control btn-danger"
+                        Value="Delete User"
+                      /></div>
+            </div>
+          
+            </div>
+         
+        </div>
+      </div>
+            </div></div>
+            </td></tr>
+
+            <tr>
+                <td>SDN003</td>
+                <td>Kasali Abdul</td>
+                <td>Teacher</td>
+                <td>Science</td>
+                <td>
+                    
+                    <button class="btn btn-mblue" type="button"  data-toggle="modal"
+                    data-target="#myModal">Modify</button>
+
+     
+    </td>
+    </tr>
+                <tr>
+                    <td>SDN004</td>
+                    <td>Chigozie Praise</td>
+                    <td>Teacher</td>
+                    <td>Social Science</td>
+                    <td> <button class="btn btn-mblue" type="button"  data-toggle="modal"
+                        data-target="#myModal">Modify</button>
+                    </td></tr><tr>
+                        <td>SDN005</td>
+                        <td>John Kenedy</td>
+                        <td>Teacher</td>
+                        <td>Arts</td>
+                        <td> <button class="btn btn-mblue" type="button"  data-toggle="modal"
+                            data-target="#myModal">Modify</button></td></tr>
+    </tbody>
+</table>
+        </div>
+       
+        
+
+
+         <div class="row m-3 mt-4">
+            
+            <div class="col text-center">
+                <button class="btn btn-mblue" type="submit">Spool</button>
+            </div>
+           
+        </div><br />
+        </div> 
+      </div> 
+    </form>
+ 
+
+
+    <script src="js/Dashboard.js"></script>
+
+   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="js/SessionAndLogout.js"></script>      -->
+   
+  </body>
+</html>

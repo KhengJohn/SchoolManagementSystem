@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ozi would help you improve your financial business">
+    <meta name="author" content="Minerva Hub...">
+
+    <title>Staff List</title>
+
+    <!-- Custom fonts for this template -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/minerva.min.css" rel="stylesheet" />
+    <link href="css/minerva_style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+        integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/TableSearchInput.js"></script>
+     <!-- ALAPA CUSTOM STYLE -->
+<link rel="stylesheet" href="./css/customstyle.css">
+<!-- ALAPA CUSTOM STYLE END-->
+    <style type="text/css">
+        h5 {
+            float: left !important;
+        }
+
+        #sec-title {
+            text-align: left !important;
+        }
+
+        .bg-gradient-primary {
+            background-color: #4e9fb0 !important;
+            background-image: linear-gradient(180deg, 10%, #4e9fb0 100%) !important;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="navDiv"></div>
+     <!-- TOP NAV -->
+ <div class="container-fluid headnav mb-4 shadow-sm">
+    <div onclick="openNav()" class="hamburger">
+     <div class="line"></div>
+     <div class="line"></div>
+     <div class="line"></div>
+   </div> 
+   <div class="dropdown">
+      <a href="#" class="btn btn-mblue dropdown-toogle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./img/homepage/java-script.png" class="rounded-circle"  width="50px" alt="">
+     </a> 
+     <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item"> Log Out</a></li>
+
+     </ul>
+  </div>
+</div>
+ <!-- TOP NAV END-->
+<!-- SIDNAV -->
+<nav>
+<div id="mySidenav" class="sidenav">
+  <div class="sidenav-head">
+    <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+   <div onclick="closeNav()" class="close-hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+  </div>
+  
+  <div class="nav-links">
+   <ul>
+   <a class=""  href="Dashboard.html">Dashboard</a>
+   
+   
+   <h4>View</h4>
+  <a class="current" href="allstaff.html">Staff</a>
+ 
+  
+   <hr />
+
+    <h4>Create</h4> 
+  
+   <hr />
+   <h4>Settings</h4>
+  <a class="" href="#">Modify Password</a>
+  <a class="" href="#">Sign Out</a>
+ 
+  </ul>
+ </div>
+ </div>
+</nav>
+  <!-- SIDNAV END --> 
+    <div class="container" style="max-width: 10000px;">
+        <!-- <input type="hidden" id="ipAddress">
+        <input type="hidden" id="browserInfo"> -->
+        <div class="o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-4 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-8">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Staff List</h1>
+                            </div>
+                            <div class="input-group col-md-5" style="margin-bottom: 20px; margin-left: auto">
+                                <input class="form-control" id="myInput" type="text"
+                                    placeholder="Search Filter Here...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div id="tableDiv">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="js/SessionAndLogout.js"></script> -->
+    <script src="js/StaffList.js"></script>
+</body>
+<div class="modal fade" id="modStaffRole" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true" style="margin-top: 50px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class="post-form" id="modifyStaffRoleForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modify Staff Role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="idRole" id="idRole">
+
+                    <div class="form-group">
+                        <input type="text" name="staffNameRole" id="staffNameRole" class="form-control"
+                            placeholder="Display Name" readonly />
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mb-3 mb-sm-0">
+                            <input type="text" name="staffIdRole" id="staffIdRole" class="form-control"
+                                placeholder="Display Name" readonly />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control form-control-user" name="role" id="role">
+                            <option value="-1" selected disabled>Select Role</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="officeadmin">Office Admin</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="modifyRole();">Modify</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="overlay" style="display: none;" id="loading">
+        <div class="overlay__wrapper">
+            <div class="spinner-border" role="status"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modStaffAccess" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true" style="margin-top: 50px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class="post-form" id="modifyStaffAccesForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modify Staff Access</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="idAccess" id="idAccess">
+
+                    <div class="form-group">
+                        <input type="text" name="staffNameAccess" id="staffNameAccess" class="form-control"
+                            placeholder="Display Name" readonly />
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mb-3 mb-sm-0">
+                            <input type="text" name="staffIdAccess" id="staffIdAccess" class="form-control"
+                                placeholder="Display Name" readonly />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control form-control-user" name="flag" id="flag">
+                            <option value="-1" selected disabled>Select Flag</option>
+                            <option value="Active">Enabled</option>
+                            <option value="Inactive">Disabled</option>
+                            <option value="resetpassword">Reset Password</option>
+                            <option value="New" selected disabled>New</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" onclick="modifyAccess();">Modify</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="overlay" style="display: none;" id="loading">
+        <div class="overlay__wrapper">
+            <div class="spinner-border" role="status"></div>
+        </div>
+    </div>
+</div>
+
+</html>

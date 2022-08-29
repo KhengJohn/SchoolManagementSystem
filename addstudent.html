@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Student Registration</title>
+
+  <!-- Custom fonts for this template -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/minerva.min.css" rel="stylesheet" />
+  <link href="css/minerva_style.css" rel="stylesheet" />
+  <link href="css/all.css" rel="stylesheet" />
+  <script src="js/stateLgc.js"></script>
+  <link rel="stylesheet" href="./css/nav.css" />
+   <!-- ALAPA CUSTOM STYLE -->
+<link rel="stylesheet" href="./css/customstyle.css">
+<!-- ALAPA CUSTOM STYLE END-->
+  <style type="text/css">
+    h5 {
+      float: left !important;
+    }
+
+    #sec-title {
+      text-align: left !important;
+    }
+
+    .bg-gradient-primary {
+      background-color: #4e9fb0 !important;
+      background-image: linear-gradient(180deg, 10%, #4e9fb0 100%) !important;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <div id="navDiv"></div>
+
+  <!-- TOP NAV -->
+ <div class="container-fluid headnav mb-4 shadow-sm">
+    <div onclick="openNav()" class="hamburger">
+     <div class="line"></div>
+     <div class="line"></div>
+     <div class="line"></div>
+   </div> 
+   <div class="dropdown">
+      <a href="#" class="btn btn-mblue dropdown-toogle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./img/homepage/java-script.png" class="rounded-circle"  width="50px" alt="">
+     </a> 
+     <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item"> Log Out</a></li>
+
+     </ul>
+  </div>
+</div>
+ <!-- TOP NAV END-->
+<!-- SIDNAV -->
+<nav>
+<div id="mySidenav" class="sidenav">
+  <div class="sidenav-head">
+    <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+   <div onclick="closeNav()" class="close-hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+  </div>
+  
+  <div class="nav-links">
+   <ul>
+   <a class=""  href="Dashboard.html">Dashboard</a>
+   
+   
+   <h4>View</h4>
+ 
+   <hr />
+
+    <h4>Create</h4> 
+    <a class="current" href="#">Add Student</a>
+  
+   <hr />
+   <h4>Settings</h4>
+  <a class="" href="#">Modify Password</a>
+  <a class="" href="#">Sign Out</a>
+ 
+  </ul>
+ </div>
+ </div>
+</nav>
+  <!-- SIDNAV END --> 
+  <div class="container">  
+    <div class="o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div id="student-page">
+                <div class="text-center">
+                  <h1 class="h4 text-gray-900 mb-4">Add Student</h1>
+                </div>
+                <form class="post-form">
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" class="form-control form-control-user" name="firstName" id="firstName"
+                        placeholder="First Name" required />
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control form-control-user" name="lastName" id="lastName"
+                        placeholder="Last Name" required />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" class="form-control form-control-user" name="middleName" id="middleName"
+                        placeholder="Middle Name" />
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="date" class="form-control form-control-user" name="dateOfBirth" id="dateOfBirth"
+                        required />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select class="form-control form-control-user" name="gender" id="gender" required>
+                        <option selected disabled>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <select class="form-control form-control-user" name="stillInSchool" id="stillInSchool" required>
+                        <option value="true" selected>
+                          Still In School? - Yes
+                        </option>
+                        <option value="false">Still In School? - No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="number" class="form-control form-control-user" name="phone" id="phone"
+                        placeholder="Telephone" required />
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="email" class="form-control form-control-user" name="email" id="email"
+                        placeholder="Email Address" required />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" class="form-control form-control-user" name="address" id="address"
+                        placeholder="Address" required />
+                    </div>
+                    <div class="col-sm-6">
+                      <select class="form-control form-control-user" name="country" id="country" onchange="setStates();"
+                        required>
+                        <option value="-1" selected disabled>
+                          Nationality
+                        </option>
+                        <option value="Nigeria">Nigeria</option>
+                        <!--<option value="Ghana">Ghana</option>-->
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select class="form-control form-control-user" name="countryState" id="countryState"
+                        onchange="setLgcs();" required>
+                        <option value="-1" selected disabled>Select State</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select class="form-control form-control-user" name="lgc" id="lgc" required>
+                        <option value="-1" selected disabled>Select LGA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select name="eduClassId" id="eduClassId" class="form-control"
+                        onchange="loadClassSubjects();" required>
+                        <option value="None" selected disabled>
+                          Select Class
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" name="regNum" id="regNum" class="form-control form-control-user"
+                        placeholder="Registration Number (Optional)" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                      <input type="text" name="parentName" id="parentName" class="form-control form-control-user"
+                        placeholder="Parent/Guardian Name" required />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                      <a href=""></a>
+                      <button class="btn btn-mblue" type="submit">
+                        Next
+                      </button>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </form>
+              </div>
+              <div id="post-subject-page" style="display: none">
+                <form class="post-subject-form">
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select name="schoolSession" id="schoolSession" class="form-control" required>
+                        <option value="0" selected disabled>Select Session</option>
+                        <option value="2021-2022">2021/2022</option>
+                        <option value="2022-2023">2022/2023</option>
+                        <option value="2023-2024">2023/2024</option>
+                        <option value="2024-2025">2024/2025</option>
+                        <option value="2025-2026">2025/2026</option>
+                        <option value="2026-2027">2026/2027</option>
+                        <option value="2027-2028">2027/2028</option>
+                        <option value="2028-2029">2028/2029</option>
+                        <option value="2029-2030">2029/2030</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <select name="termType" id="termType" class="form-control" required>
+                        <option value="0" selected disabled>Select Term</option>
+                        <option value="1">First Term</option>
+                        <option value="2">Second Term</option>
+                        <option value="3">Third Term</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                      <select class="form-control form-control-user" name="offeredSubjects" id="offeredSubjects"
+                        onchange="offeredSubject()" required>
+                        <option value="All" selected disabled>Select Offered Subject</option>
+                        <option value="All">All Class Subjects</option>
+                        <option value="Elected">Select Custom Subjects</option>
+                      </select>
+                      <input type="hidden" id="subjectList">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12" id="custom-subject">
+                      <select class="form-control form-control-user" name="subjects" id="subjects" size="15"
+                        onclick="displaySubjects()" multiple required>
+                        <option value="-1" selected disabled>Select Class Subjects</option>
+                        <option value="agriculturalScience">Agricultural Science</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="basicScience">Basic Science</option>
+                        <option value="basicTechnology">Basic Technology</option>
+                        <option value="bibleKnowledge">Bible Knowledge</option>
+                        <option value="biology">Biology</option>
+                        <option value="bookKeeping">Book Keeping</option>
+                        <option value="businessStudies">Business Studies</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="christianReligionStudies">Christian Religion Studies</option>
+                        <option value="civic">Civic</option>
+                        <option value="civicEducation">Civic Education</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="computer">Computer</option>
+                        <option value="computerScience">Computer Science</option>
+                        <option value="computerStudies">Computer Studies</option>
+                        <option value="creativeArts">Creative Arts</option>
+                        <option value="culturalAndCreativeArts">Cultural And Creative Arts</option>
+                        <option value="dataProcessing">Data Processing</option>
+                        <option value="economics">Economics</option>
+                        <option value="elementaryScience">Elementary Science</option>
+                        <option value="englishComposition">English Composition</option>
+                        <option value="englishGrammar">English Grammar</option>
+                        <option value="englishLanguage">English Language</option>
+                        <option value="financialAccount">Financial Account</option>
+                        <option value="fineArtCreativeArt">Fine Art / Creative Art</option>
+                        <option value="french">French</option>
+                        <option value="furtherMathematics">Further Mathematics</option>
+                        <option value="geography">Geography</option>
+                        <option value="government">Government</option>
+                        <option value="handwriting">Hand Writing</option>
+                        <option value="hausa">Hausa</option>
+                        <option value="healthEducation">Health Education</option>
+                        <option value="healthHabit">Health Habit</option>
+                        <option value="history">History</option>
+                        <option value="homeEconomics">Home Economics</option>
+                        <option value="igbo">Igbo</option>
+                        <option value="islamicReligionStudies">Islamic Religion Studies</option>
+                        <option value="languages">Languages</option>
+                        <option value="letterworkPhonicMethod">Letterwork Phonic Method</option>
+                        <option value="literatureInEnglish">Literature In English</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="moralInstruction">Moral Instruction</option>
+                        <option value="music">Music</option>
+                        <option value="nigerianLanguages">Nigerian Languages</option>
+                        <option value="officePractice">Office Practice</option>
+                        <option value="phonics">Phonics</option>
+                        <option value="physicalAndHealthEducation">Physical And Health Education</option>
+                        <option value="physicalExercise">Physical Exercise</option>
+                        <option value="physics">Physics</option>
+                        <option value="quantitativeReasoning">Quantitative Reasoning</option>
+                        <option value="religiousKnowledge">Religious Knowledge</option>
+                        <option value="rhymesSongs">Rhymes Songs</option>
+                        <option value="scientificAndReflectiveThinking">Scientific And Reflective Thinking</option>
+                        <option value="socialHabit">Social Habit</option>
+                        <option value="socialStudies">Social Studies</option>
+                        <option value="spelling">Spelling</option>
+                        <option value="storyTelling">Story Telling</option>
+                        <option value="technicalDrawing">Technical Drawing</option>
+                        <option value="typewriting">Typewriting</option>
+                        <option value="verbalReasoning">Verbal Reasoning</option>
+                        <option value="vocationalAptitude">Vocational Aptitude</option>
+                        <option value="writingPatterns">Writing Patterns</option>
+                        <option value="yoruba">Yoruba</option>
+                        <option value="numberWork">Number Work</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                      <span style="font-size:small; color: blue" id="displaySelText"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <button class="btn btn-mblue" type="button" onclick="submitStudentSubjects()">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="post-upload-page" style="display: none">
+                <form class="post-upload-form" name="uploadForm" method="post" enctype="multipart/form-data">
+                  <input type="hidden" id="studentId" name="studentId" />
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                      <label class="control-label" for="Client_officeName">Student Photo</label>
+                      <div class="upload-link-wrapper">
+                        <a href="#">Upload Image(Optional)</a>
+                        <input type="file" name="studentPics" id="studentPics" />
+                        <figure class="avatar avatar-md rounded-circle">
+                          <img id="myImg" src="img/customer.png" alt="your image" />
+                        </figure>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <button class="btn btn-mblue" type="submit">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" style="display: none;" id="loading">
+      <div class="overlay__wrapper">
+        <div class="spinner-border" role="status"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="js/SessionAndLogout.js"></script> -->
+  <script src="js/StudentRegistration.js"></script>
+</body>
+
+</html>
