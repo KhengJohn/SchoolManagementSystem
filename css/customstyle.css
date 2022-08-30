@@ -194,6 +194,14 @@ color: white;
 }
 
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #011145;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #011145;
+}
 @media(max-width:920px){
     .number-card-grid{
         display: grid;
