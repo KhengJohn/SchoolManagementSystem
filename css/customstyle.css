@@ -193,6 +193,7 @@ color: white;
     color: #011145;
 }
 
+
 @media(max-width:920px){
     .number-card-grid{
         display: grid;
