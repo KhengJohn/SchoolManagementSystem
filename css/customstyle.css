@@ -239,3 +239,20 @@ color: white;
         align-items: center;
     }
 }
+
+footer{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #011145;
+    color: white;
+}
+footer > a {
+  
+    color: white;
+}
+footer > a:hover{
+      text-decoration: none;
+      color: rgb(212, 212, 212);
+}

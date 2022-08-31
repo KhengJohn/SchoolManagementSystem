@@ -67,6 +67,7 @@ and open the template in the editor.
      <a class="" href="attendance.html">Attendance</a>
      <a class="" href="allclass.html">Class</a>
      <a class="" href="database.html">Database</a>
+     <a class="" href="allresult.html">Results</a>
      <a class="" href="allstaff.html">Staff</a>
      <a class="" href="allstudent.html">Students</a>
 
@@ -170,34 +171,11 @@ and open the template in the editor.
 <canvas id="myChart" style="width:100%;"></canvas>
   </div>
 </section>
-<script>
 
-var xValues = ["Registered", "Unregistered"];
-var yValues = [70, 30];
-var barColors = [
-  
-  "#00aba9",
-  "#2b5797",
- 
-];
+<footer class="container-fluid">
+  <a href="">How can we servce you better</a>
+</footer>
 
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: ""
-    }
-  }
-});
-</script>
 
 
 
@@ -211,7 +189,34 @@ new Chart("myChart", {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
     <!-- <script src="js/SessionAndLogout.js"></script> -->
+    <script>
 
+    var xValues = ["Registered", "Unregistered"];
+    var yValues = [70, 30];
+    var barColors = [
+      
+      "#00aba9",
+      "#2b5797",
+    
+    ];
+
+    new Chart("myChart", {
+      type: "pie",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: ""
+        }
+      }
+    });
+    </script>
 </body>
 
 </html>

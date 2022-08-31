@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ozi would help you improve your financial business">
+    <meta name="author" content="Minerva Hub...">
+
+    <title>Students Result</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/minerva.min.css" rel="stylesheet" />
+    <link href="css/minerva_style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/TableSearchInput.js"></script>
+   
+     <!-- ALAPA CUSTOM STYLE -->
+<link rel="stylesheet" href="./css/customstyle.css">
+<!-- ALAPA CUSTOM STYLE END-->
+   <style type="text/css">
+        h5 {
+            float: left !important;
+        }
+        
+        #sec-title {
+            text-align: left !important;
+        }
+        
+        .bg-gradient-primary {
+            background-color: #4e9fb0 !important;
+            background-image: linear-gradient(180deg, 10%, #4e9fb0 100%) !important;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="navDiv"></div>
+     <!-- TOP NAV -->
+ <div class="container-fluid headnav mb-4 shadow-sm">
+    <div onclick="openNav()" class="hamburger">
+     <div class="line"></div>
+     <div class="line"></div>
+     <div class="line"></div>
+   </div> 
+   <div class="dropdown">
+      <a href="#" class="btn btn-mblue dropdown-toogle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./img/homepage/java-script.png" class="rounded-circle"  width="50px" alt="">
+     </a> 
+     <ul class="dropdown-menu">
+      <li><a href="#" class="dropdown-item"> Log Out</a></li>
+
+     </ul>
+  </div>
+</div>
+ <!-- TOP NAV END-->
+<!-- SIDNAV -->
+<nav>
+<div id="mySidenav" class="sidenav">
+  <div class="sidenav-head">
+    <img src="./img/homepage/minerva_hub_white.png" width="150px" alt="" srcset="">
+   <div onclick="closeNav()" class="close-hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+  </div>
+  
+  <div class="nav-links">
+   <ul>
+   <a class=""  href="Dashboard.html">Dashboard</a>
+   
+   
+   <h4>View</h4>
+  <a class="current" href="#">Results</a>
+   <hr />
+
+    <h4>Create</h4> 
+    
+  
+   <hr />
+   <h4>Settings</h4>
+  <a class="" href="#">Modify Password</a>
+  <a class="" href="#">Sign Out</a>
+ 
+  </ul>
+ </div>
+ </div>
+</nav>
+  <!-- SIDNAV END --> 
+    <div class="container" style="max-width: 10000px;">
+        <!-- <input type="hidden" id="ipAddress">
+        <input type="hidden" id="browserInfo"> -->
+        <div class="o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Students Result</h1>
+                            </div>
+                            <div class="form-group d-flex align-items-center justify-content-center  row" style="margin-bottom: 20px; margin-left: auto">
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+                                    <select class="form-control form-control-user"
+                                        name="classNo" id="classNo" onchange="loadClass();"
+                                        required>
+                                        <option value="0" selected disabled>All School</option>
+                                        <option value="1">Daycare</option>
+                                        <option value="2">Pre-Nursery One</option>
+                                        <option value="3">Pre-Nursery Two</option>
+                                        <option value="4">Pre-Nursery Three</option>
+                                        <option value="5">Nursery One</option>
+                                        <option value="6">Nursery Two</option>
+                                        <option value="7">Nursery Three</option>
+                                        <option value="8">Primary One</option>
+                                        <option value="9">Primary Two</option>
+                                        <option value="10">Primary Three</option>
+                                        <option value="11">Primary Four</option>
+                                        <option value="12">Primary Five</option>
+                                        <option value="13">Primary Six</option>
+                                        <option value="14">Junior Secondary School One</option>
+                                        <option value="15">Junior Secondary School Two</option>
+                                        <option value="16">Junior Secondary School Three
+                                        </option>
+                                        <option value="17">Senior Secondary School One</option>
+                                        <option value="18">Senior Secondary School Two</option>
+                                        <option value="19">Senior Secondary School Three
+                                        </option>
+                                        <option value="20">Tutorial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+                                    <select class="form-control form-control-user"
+                                        name="eduClassId" id="eduClassId">
+                                        <option value="0" selected disabled>All Class Group
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+                                    <select class="form-control form-control-user"
+                                        name="stillInSchool" id="stillInSchool">
+                                        <option value="All">Still In School? - All</option>
+                                        <option value="1"> Still In School? - Yes</option>
+                                        <option value="0">Still In School? - No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-5" style="margin-bottom: 20px; margin-left: auto">
+                                <input class="form-control" id="myInput" type="text" placeholder="Search Filter Here...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                           <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Student Name</th>
+                                   
+                                    <th>View Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ST/01/22/SS</td>
+                                    <td>John Idoko</td>
+                                    
+                                    <td><button type="button" class="btn btn-mblue" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        View
+                                      </button></td>
+                                </tr>
+                            </tbody>
+                           </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal -->
+<div class="modal fade " id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-mblue" id="staticBackdropLabel">Report Card</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                           
+   
+              <div class="m-5" style="overflow-x:auto;">
+                <table class="table table-bordered  table-responsive">
+                
+                        <tr>
+                         
+                            <th scope="col">FULL NAMES</th>
+                            <td scope="col">James Abel</td>
+                      
+                            <th scope="col">SEX</th>
+                            <td scope="col">Male</td>
+                          
+                            <th scope="col">CLASS</th>
+                            <td scope="col">JSS 1 </td>
+                        
+                        </tr>
+                 
+                    <tbody>
+                      <tr>
+                       
+                          <th scope="col">Registration No.</th>
+                          <td scope="col">SD/GHI/17/43591</td>
+                       
+                       
+                          <th scope="col">Term</th>
+                          <td scope="col">First</td>
+                       
+                       
+                          <th scope="col">No. On Roll </th>
+                          <td scope="col">-</td>
+                       
+                      </tr>
+                      <tr>
+                     
+                          <th scope="col">Session</th>
+                          <td scope="col">2021/2022</td>
+                       
+                       
+                          <th scope="col">Average Score</th>
+                          <td scope="col">0.00</td>
+                       
+                       
+                          <th scope="col">Total Score</th>
+                          <td scope="col">0.0</td>
+                       
+                      </tr>
+                    
+                      <tr>
+                     
+                          <th scope="col">No of Times School Opened</th>
+                          <td scope="col">-</td>
+                       
+                       
+                          <th scope="col">No of Time Present</th>
+                          <td scope="col">0</td>
+                       
+                       
+                          <th scope="col">No. of Time Absent</th>
+                          <td scope="col">0</td>
+                       
+                      </tr>
+                      <tr>
+                     
+                          <th scope="col">First Term Ends</th>
+                          <td scope="col">03/01/2022</td>
+                       
+                          <th scope="col">Second Term Begins</th>
+                          <td scope="col">05/04/2022</td>
+                       
+                       
+                          <th scope="col">Second Term Begins</th>
+                          <td scope="col">05/04/2022</td>
+                       
+                      </tr></tbody></table></div>
+              <div class="m-5" >
+      <table class="table table-bordered table-responsive">
+          <thead>
+              <tr>
+                  <th scope="col">S/N</th>
+                  <th scope="col">SUBJECT</th>
+                  <th scope="col">ASSIGNMENT</th>
+                  <th scope="col">1st TEST</th>
+                  <th scope="col">2nd TEST</th>
+                  <th scope="col">EXERCISE</th>
+                  <th scope="col">PROJECT</th>
+                  <th scope="col">EXAM</th>
+                  <th scope="col">OVERALL</th>                 
+                  <th scope="col">GRADE</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td></td>
+              <td></td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>20</td>
+              <td>10</td>
+              <td>40</td>
+              <td> 100</td>
+                  <td> </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>English Language</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td> 0.0</td>
+                      <td>F9 </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Mathematics</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td> 0.0</td>
+                      <td>F9 </td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Basic Science</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td> 0.0</td>
+                      <td>F9 </td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Basic Technology</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td> 0.0</td>
+                      <td>F9 </td>
+              </tr>
+          </tbody>
+      </table>
+              </div>
+             
+              <div class="m-5">
+                <div class="row m-3">
+                  <div class="col-12 mb-4">Class Teacher's Comment:</div>
+                  <div class="col-12 mb-4">Head Teacher's Comment:</div>
+                  <div class="col-12">Principal's Comment:</div>
+                </div>
+              </div>
+              
+      
+              <div class="m-5" >
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr >
+                            <th class="text-center" scope="col">Subject</th>
+                            <th class="text-center" scope="col">Comment</th>
+                            <th class="text-center" scope="col">Teacher's Name</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"> Mathematics</td>
+                        <td class="text-center">No Comment</td>
+                        <td class="text-center">-</td>
+                      
+                        </tr>
+                        <tr>
+                          <td > English Language</td>
+                      <td class="text-center">No Comment</td>
+                      <td class="text-center">-</td>
+                    
+                      </tr>
+                      <tr>
+                        <td >Basic Science</td>
+                    <td class="text-center">No Comment</td>
+                    <td class="text-center">-</td>
+                  
+                    </tr>
+                    <tr>
+                      <td >Basic Technology</td>
+                  <td class="text-center">No Comment</td>
+                  <td class="text-center">-</td>
+                
+                  </tr>
+                    </tbody>
+                </table>
+                        </div>
+          
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-mblue">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="js/SessionAndLogout.js"></script> -->
+    <!-- <script src="js/AllSchoolStaff.js"></script> -->
+
+</body>
+
+</html>
