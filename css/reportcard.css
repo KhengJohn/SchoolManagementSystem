@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body{
+   font-family: 'Roboto', sans-serif;
+  
+}
+.card{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 15px;
+    overflow-y: auto;
+    color: black;
+   box-shadow:  black 1px 10px 20px -9px;
+}
+
+.head {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    width:700px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.school-logo{
+    width:120px;
+}
+
+.tables {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem; 
+    grid-auto-rows: minmax(100% auto);
+    padding: 3%;
+}
+
+.subject-table{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap: 1rem;
+   
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap: 1rem;
+    
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+table {
+    width: 100%;
+    background-color: #f5f5f5 !important;
+    border-collapse: collapse;
+}
+table tr > th {
+   padding: 08px;
+   background-color: #011145 !important;
+   color:white;
+   
+}
+/* table tr > th:first-child {
+    text-align: left;
+ } */
+table tr > td {
+    padding: 08px;
+}
+table tr > td:hover {
+    background-color: #919191!important;
+}
+
+table tr:nth-child(odd) {
+    background-color: #afafaf !important;
+}
+table tr > td:not(:first-child)  {
+    text-align: center !important;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+
+
+
+.at {
+    height: max-content;
+}
+
+.student-info {
+    padding: 3%;
+    width: 100%;
+    margin: auto;
+}
+
+.student-info  tr > th{
+    background-color: white !important;
+    color: black !important;
+}
+
+.student-info tr > td{
+    background-color: white !important;
+}
+
+
+.btn{
+    padding: 5px 10px;
+    font-size: 17px;
+    margin: 20px;
+    
+}
+/* @media (max-width:700px){
+    .student-info {
+        padding: 3%;
+        width: 400px;
+        margin: auto;
+    }
+    .head{
+        width: 400px;
+    }
+    
+} */
+
+@media (min-width:900px){
+    .card{
+    margin-left:20%;
+    margin-right: 20%;
+    
+    }
+
+    /* .head {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    } */
+}
