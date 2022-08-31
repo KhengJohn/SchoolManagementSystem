@@ -241,13 +241,13 @@ color: white;
 }
 
 /* PRELOADER */
-/* #preloader{
+#preloader{
     background-color: #011145;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
-} */
+}
 .cssload-thecube {
     z-index: 100;
 	width: 73px;
