@@ -30,6 +30,14 @@ and open the template in the editor.
 
 </head>
 <body>
+  <div >
+    <div id="preloader" class="cssload-thecube">
+      <div class="cssload-cube cssload-c1"></div>
+      <div class="cssload-cube cssload-c2"></div>
+      <div class="cssload-cube cssload-c4"></div>
+      <div class="cssload-cube cssload-c3"></div>
+    </div>
+  </div>
   <div class="container-fluid headnav mb-4 shadow-sm">
     <div onclick="openNav()" class="hamburger">
      <div class="line"></div>
@@ -123,18 +131,20 @@ and open the template in the editor.
             <h2>2022</h2>
           </div>
       </div>
-      <a href="allclass.html">
+      <a href="attendance.html">
       <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
         <div class="card-body mt-0 pt-0 ">
-          <h4>View Class</h4>
+          <h4>Attendance</h4>
         </div>
     </div>
     </a>
+    <a href="allclass.html">
     <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
       <div class="card-body mt-0 pt-0 ">
-        <h4>View Subject</h4>
+        <h4>View Class</h4>
       </div>
-  </div>
+    </div>
+    </a>
   <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
     <div class="card-body mt-0 pt-0 ">
       <h4> Finance</h4>
@@ -152,7 +162,7 @@ and open the template in the editor.
 
 <section class="chartsec container">
   <div>
-    <div class="card p-3 pt-4">
+    <div class="card p-3 pt-4 shadow">
       <h3 class="card-title text-mblue text-center">Recent Transactions</h3>
       <div class="card-body">
         <table class="table">
@@ -216,6 +226,12 @@ and open the template in the editor.
         }
       }
     });
+    </script>
+
+    <script>
+      const loader = document.getElementById('preloader');
+      window.addEventListener("load", function(){loader.style.display="none";
+    })
     </script>
 </body>
 
