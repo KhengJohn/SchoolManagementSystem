@@ -95,14 +95,14 @@ and open the template in the editor.
       <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
           <p class="card-title pl-0  mb-0 pb-0">School Branches</p>
           <div class="card-body mt-0 pt-0 ">
-            <h2>440</h2>
+            <h2>4</h2>
           </div>
       </div>
     <a href="allstaff.html">
         <div class="card shadow rounded pl-4 pt-4 pr-4 number-card">
                 <p class="card-title pl-0  mb-0 pb-0">Staffs</p>
             <div class="card-body mt-0 pt-0 ">
-                <h2>440</h2>
+                <h2>24</h2>
             </div>
         </div>
     </a>
@@ -139,19 +139,74 @@ and open the template in the editor.
     </div>
 </div>
 <div class="card shadow rounded pl-4 pt-4 pr-4 bg-mblue text-white  number-card nc-last">
-        <div class="card-body mt-0 pt-0 ">
-          <h4>Session: 2<sup>nd</sup></h4>
+        <div class="card-body mt-0 pt-0">
+          <h4>Session:2<sup>nd</sup></h4>
         </div>
     </div>
     </div>
   </section>
 
-  <div class="container">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<section class="chartsec container">
+  <div>
+    <div class="card p-3 pt-5">
+      <h3 class="card-title text-mblue text-sm-center">Recent Transactions</h3>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Name</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+<canvas id="myChart" style="width:100%;"></canvas>
+  </div>
+</section>
+<script>
+
+var xValues = ["Registered", "Unregistered"];
+var yValues = [70, 30];
+var barColors = [
+  
+  "#00aba9",
+  "#2b5797",
+ 
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+</script>
+
+
+
+
+
     <!--        <a href="category.html">category</a><br>
         <a href="Product.html">Product</a><br>
         <a href="Shipper.html">Shipper</a><br>
         <a href="Supplier.html">Supplier</a><br>-->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
     <!-- <script src="js/SessionAndLogout.js"></script> -->

@@ -173,7 +173,14 @@ color: white;
     border-top: #011145 solid;
     background-color: #1f85850a;
 }
-
+/* #myChart{
+    border-top: #ffffff solid;
+    background-color: #ffffff;
+}
+#myChart:hover{
+    border-top: #011145 solid;
+    background-color: #1f85850a;
+} */
 .nc-last{
     border-top: #011145 solid;
     cursor: none;
@@ -193,6 +200,11 @@ color: white;
     color: #011145;
 }
 
+.chartsec{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 1.2rem;
+}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
@@ -207,6 +219,11 @@ color: white;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+    }
+    .chartsec{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1.2rem;
     }
 }
 
