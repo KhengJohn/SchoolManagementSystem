@@ -107,15 +107,15 @@
     <div class="o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
         <!-- Nested Row within Card Body -->
-        <div class="row">
+        <div class="">
           <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
           <div class="col-lg-7">
-            <div class="p-5">
+            <div class="p-3">
               <div class="text-center">
                 <h1 class="h4  text-mblue mb-4">Create Class</h1>
               </div>
               <form class="post-form">
-                <div class="form-group row">
+                <div class="form-group row mb-lg-3" style="margin:auto ;">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <select class="form-control form-control-user" name="classNo" id="classNo" required>
                       <option value="0" selected disabled>Select Class</option>
@@ -142,7 +142,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row mb-lg-3"   style="margin:auto ;">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <select class="form-control form-control-user" name="arm" id="arm" required>
                       <option value="0" selected disabled>Select Arm</option>
@@ -175,7 +175,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row mb-lg-3" style="margin:auto ;">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <select class="form-control form-control-user" name="teacher_staff_id" id="teacher_staff_id"
                       required>
@@ -183,7 +183,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row mb-3" style="margin:auto ;">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <select class="form-control form-control-user" name="subjects" id="subjects" size="15"
                       onclick="displaySubjects()" multiple required>
@@ -257,13 +257,13 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row" style="margin:auto ;">
                   <div class="col-sm-12 mb-3 mb-sm-0">
                     <span style="font-size:small; color: blue" id="displaySelText"></span>
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin:auto ;">
                   <div class="col"></div>
                   <div class="col">
                     <button class="btn btn-primary" type="button" onclick="createClass()">Submit</button>
