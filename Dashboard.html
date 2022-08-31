@@ -29,14 +29,19 @@ and open the template in the editor.
 </style>
 
 </head>
-<body>
+<body id="notLoaded">
   <div id="preloader">
     <div  class="cssload-thecube">
       <div class="cssload-cube cssload-c1"></div>
       <div class="cssload-cube cssload-c2"></div>
       <div class="cssload-cube cssload-c4"></div>
       <div class="cssload-cube cssload-c3"></div>
-    </div>
+      <div>
+       </div>
+    
+  </div>
+  <img src="/img/homepage/minerva_hub_white.png" width="130px" class="preloaderImg  alt="" srcset="">
+   
   </div>
   <div class="container-fluid headnav mb-4 shadow-sm">
     <div onclick="openNav()" class="hamburger">
@@ -229,9 +234,12 @@ and open the template in the editor.
     </script>
 
     <script>
-      const loader = document.getElementById('preloader');
-      window.addEventListener("load", function(){loader.style.display="none";
-    })
+      setTimeout(function(){
+        $('#preloader').fadeOut();
+        $('.cssload-thecube').delay(150).fadeOut('slow');
+
+      },3000);
+    
     </script>
 </body>
 
